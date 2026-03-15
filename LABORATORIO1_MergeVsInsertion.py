@@ -45,6 +45,7 @@ valores_n = [1000, 10000, 100000, 1000000, 10000000]
 tiempos_merge = []
 tiempos_insertion = []
 
+# ~ PRUEBA ~
 print("\nMERGE SORT vs INSERTION SORT")
 
 # PRUEBA MERGE SORT
@@ -58,9 +59,7 @@ for n in valores_n:
     merge_sort(arreglo)
     fin = time.time()
     tiempo = fin - inicio
-
     tiempos_merge.append(tiempo)
-
     print(n, "|", tiempo)
 
 # PRUEBA INSERTION SORT
@@ -74,9 +73,7 @@ for n in valores_n:
     insertion_sort(arreglo)
     fin = time.time()
     tiempo = fin - inicio
-
     tiempos_insertion.append(tiempo)
-
     print(n, "|", tiempo)
 
 
